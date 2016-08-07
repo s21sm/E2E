@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:serviceinput="http://localhost:8080/FakeService/onto/Cottageinputonontology/"
+   xmlns:serviceoutput="http://localhost:8080/FakeService/onto/Cottageoutputonontology/"
+   xmlns:sswap="http://sswapmeet.sswap.info/sswap/"
+>
+  <rdf:Description rdf:about="http://localhost:8080/FakeService/getService">
+    <sswap:name>Cottage Booking Service</sswap:name>
+    <rdf:type rdf:resource="http://localhost:8080/FakeService/onto/Cottageoutputonontology/CottageInformationService"/>
+    <sswap:providedBy rdf:resource="http://localhost:8080/FakeService/resourceProvider"/>
+    <sswap:operatesOn rdf:nodeID="ub43bL12C22"/>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Resource"/>
+    <sswap:oneLineDescription> You can book cottage via this service</sswap:oneLineDescription>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub43bL24C34">
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Object"/>
+    <serviceoutput:hasLakeDisatance> </serviceoutput:hasLakeDisatance>
+    <rdf:type rdf:resource="http://localhost:8080/FakeService/onto/Cottageoutputonontology/outputinfo"/>
+    <serviceoutput:hasBedRooms> </serviceoutput:hasBedRooms>
+    <serviceoutput:hasPlaces> </serviceoutput:hasPlaces>
+    <serviceoutput:hasBookingDate> </serviceoutput:hasBookingDate>
+    <serviceoutput:CottageAddress> </serviceoutput:CottageAddress>
+    <serviceoutput:hasCityDistance> </serviceoutput:hasCityDistance>
+    <serviceoutput:hasBookingNumber> </serviceoutput:hasBookingNumber>
+    <serviceoutput:isSituatedIn> </serviceoutput:isSituatedIn>
+    <serviceoutput:Customer> </serviceoutput:Customer>
+    <serviceoutput:HASURL> </serviceoutput:HASURL>
+    <serviceoutput:hasCottageName> </serviceoutput:hasCottageName>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub43bL13C30">
+    <serviceinput:StartDate> </serviceinput:StartDate>
+    <serviceinput:hasBed> </serviceinput:hasBed>
+    <serviceinput:isSituatedIn> </serviceinput:isSituatedIn>
+    <serviceinput:hasFlexi> </serviceinput:hasFlexi>
+    <serviceinput:hasCityDistance> </serviceinput:hasCityDistance>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Subject"/>
+    <serviceinput:hasLakeDisatance> </serviceinput:hasLakeDisatance>
+    <rdf:type rdf:resource="http://localhost:8080/FakeService/onto/Cottageinputonontology/inputinfo"/>
+    <serviceinput:CustomerName> </serviceinput:CustomerName>
+    <sswap:mapsTo rdf:nodeID="ub43bL24C34"/>
+    <serviceinput:EndDate> </serviceinput:EndDate>
+    <serviceinput:hasPlaces> </serviceinput:hasPlaces>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ub43bL12C22">
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Graph"/>
+    <sswap:hasMapping rdf:nodeID="ub43bL13C30"/>
+  </rdf:Description>
+</rdf:RDF>
